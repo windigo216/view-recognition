@@ -1,0 +1,29 @@
+{
+    "id": "3554dbe0-5aef-4f00-92b4-06e34c800bc2",
+    "started_at": "2026-03-24T15:53:59.294913",
+    "finished_at": "2026-03-24T15:58:00.299971",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "vision-pat__anthropic-claude-opus-4.6__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.2667
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.2667": [
+                            "view-recognition-custom-agent__FrwjDpF"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}

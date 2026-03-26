@@ -1,0 +1,99 @@
+{
+    "id": "c3bf4ca7-c2e2-4a10-9f48-caa653e39671",
+    "task_name": "view-recognition-custom-agent",
+    "trial_name": "view-recognition-custom-agent__ZjmruU2",
+    "trial_uri": "file:///Users/gvelamoor/Documents/yale/interviews/aq/view-recognition-custom-agent/jobs/2026-03-24__15-34-53/view-recognition-custom-agent__ZjmruU2",
+    "task_id": {
+        "path": "/Users/gvelamoor/Documents/yale/interviews/aq/view-recognition-custom-agent"
+    },
+    "source": null,
+    "task_checksum": "bd1e2ca81ef3da64ffece0303eb64d48291c344cf30e00ce336e8d2593191fad",
+    "config": {
+        "task": {
+            "path": "/Users/gvelamoor/Documents/yale/interviews/aq/view-recognition-custom-agent",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "view-recognition-custom-agent__ZjmruU2",
+        "trials_dir": "jobs/2026-03-24__15-34-53",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "vision_agent:VisionAgent",
+            "model_name": "openrouter/google/gemini-3.1-pro-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENROUTER_API_KEY": "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"
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": true,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "e73d88fc-cd9c-462b-808c-75cfcdfd8a06"
+    },
+    "agent_info": {
+        "name": "vision-pat",
+        "version": "1.2.0",
+        "model_info": {
+            "name": "google/gemini-3.1-pro-preview",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 16589,
+        "n_cache_tokens": null,
+        "n_output_tokens": 39687,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.4
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-24T19:34:53.973901Z",
+    "finished_at": "2026-03-24T19:48:18.211552Z",
+    "environment_setup": {
+        "started_at": "2026-03-24T19:34:54.015777Z",
+        "finished_at": "2026-03-24T19:34:56.446139Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-24T19:34:56.446203Z",
+        "finished_at": "2026-03-24T19:34:56.446262Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-24T19:34:56.446326Z",
+        "finished_at": "2026-03-24T19:48:07.098140Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-24T19:48:07.098440Z",
+        "finished_at": "2026-03-24T19:48:07.601457Z"
+    }
+}

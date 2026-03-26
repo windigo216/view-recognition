@@ -1,0 +1,17 @@
+  q01: OK
+  q02: WRONG (got 'B', expected 'C')
+  q03: OK
+  q04: WRONG (got 'D', expected 'B')
+  q05: WRONG (got 'C', expected 'D')
+  q06: WRONG (got 'C', expected 'B')
+  q07: WRONG (got 'D', expected 'B')
+  q08: WRONG (got 'B', expected 'C')
+  q09: WRONG (got 'B', expected 'A')
+  q10: WRONG (got 'B', expected 'D')
+  q11: WRONG (got 'C', expected 'D')
+  q12: OK
+  q13: OK
+  q14: WRONG (got 'B', expected 'C')
+  q15: WRONG (got 'B', expected 'A')
+
+Score: 4/15 = 0.27

@@ -8,9 +8,5 @@ venv/
 # Environment
 .env
 
-# Runtime output
-jobs/
-analytics/
-environment/selected_questions/
 # macOS
 .DS_Store

@@ -1,0 +1,17 @@
+  q01: WRONG (got '?', expected 'D')
+  q02: WRONG (got '?', expected 'C')
+  q03: WRONG (got '?', expected 'C')
+  q04: WRONG (got '?', expected 'B')
+  q05: WRONG (got '?', expected 'D')
+  q06: WRONG (got '?', expected 'B')
+  q07: WRONG (got '?', expected 'B')
+  q08: WRONG (got '?', expected 'C')
+  q09: WRONG (got '?', expected 'A')
+  q10: WRONG (got '?', expected 'D')
+  q11: WRONG (got '?', expected 'D')
+  q12: WRONG (got '?', expected 'B')
+  q13: WRONG (got '?', expected 'A')
+  q14: WRONG (got '?', expected 'C')
+  q15: WRONG (got '?', expected 'A')
+
+Score: 0/15 = 0.00

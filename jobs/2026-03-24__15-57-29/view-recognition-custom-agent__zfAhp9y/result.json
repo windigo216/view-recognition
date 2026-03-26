@@ -1,0 +1,99 @@
+{
+    "id": "9bed2c89-1d32-4d0e-aa73-400cab5ba9d0",
+    "task_name": "view-recognition-custom-agent",
+    "trial_name": "view-recognition-custom-agent__zfAhp9y",
+    "trial_uri": "file:///Users/gvelamoor/Documents/yale/interviews/aq/view-recognition-custom-agent/jobs/2026-03-24__15-57-29/view-recognition-custom-agent__zfAhp9y",
+    "task_id": {
+        "path": "/Users/gvelamoor/Documents/yale/interviews/aq/view-recognition-custom-agent"
+    },
+    "source": null,
+    "task_checksum": "3d40aff916fb317e25f3fd2ae8029e3d2877dddcb42242b600bd6d731e6897d6",
+    "config": {
+        "task": {
+            "path": "/Users/gvelamoor/Documents/yale/interviews/aq/view-recognition-custom-agent",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "view-recognition-custom-agent__zfAhp9y",
+        "trials_dir": "jobs/2026-03-24__15-57-29",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "vision_agent:VisionAgent",
+            "model_name": "openrouter/openai/gpt-5.4",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENROUTER_API_KEY": "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"
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": true,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "05004bae-1998-4d1a-8968-629a9912dea8"
+    },
+    "agent_info": {
+        "name": "vision-pat",
+        "version": "1.2.0",
+        "model_info": {
+            "name": "openai/gpt-5.4",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 16574,
+        "n_cache_tokens": null,
+        "n_output_tokens": 460,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.2
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-24T19:57:29.654974Z",
+    "finished_at": "2026-03-24T19:57:58.530894Z",
+    "environment_setup": {
+        "started_at": "2026-03-24T19:57:29.784049Z",
+        "finished_at": "2026-03-24T19:57:32.142709Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-24T19:57:32.142802Z",
+        "finished_at": "2026-03-24T19:57:32.142877Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-24T19:57:32.142944Z",
+        "finished_at": "2026-03-24T19:57:47.308296Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-24T19:57:47.308474Z",
+        "finished_at": "2026-03-24T19:57:47.852951Z"
+    }
+}

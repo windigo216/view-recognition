@@ -1,0 +1,99 @@
+{
+    "id": "9682eade-d426-4658-bf35-58a95d4547b9",
+    "task_name": "view-recognition-custom-agent",
+    "trial_name": "view-recognition-custom-agent__BU5CY6o",
+    "trial_uri": "file:///Users/gvelamoor/Documents/yale/interviews/aq/view-recognition-custom-agent/jobs/2026-03-24__15-54-49/view-recognition-custom-agent__BU5CY6o",
+    "task_id": {
+        "path": "/Users/gvelamoor/Documents/yale/interviews/aq/view-recognition-custom-agent"
+    },
+    "source": null,
+    "task_checksum": "17ea291b4ee8389b6cf3dc193a96c897f2c09cfa28dd925217956f73990e0681",
+    "config": {
+        "task": {
+            "path": "/Users/gvelamoor/Documents/yale/interviews/aq/view-recognition-custom-agent",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "view-recognition-custom-agent__BU5CY6o",
+        "trials_dir": "jobs/2026-03-24__15-54-49",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "vision_agent:VisionAgent",
+            "model_name": "openrouter/anthropic/claude-opus-4.6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENROUTER_API_KEY": "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"
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": true,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "523506ca-56aa-4a16-b760-8733a3a4eae0"
+    },
+    "agent_info": {
+        "name": "vision-pat",
+        "version": "1.2.0",
+        "model_info": {
+            "name": "anthropic/claude-opus-4.6",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 32795,
+        "n_cache_tokens": null,
+        "n_output_tokens": 6382,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.2667
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-24T19:54:49.731280Z",
+    "finished_at": "2026-03-24T19:57:20.344594Z",
+    "environment_setup": {
+        "started_at": "2026-03-24T19:54:49.855322Z",
+        "finished_at": "2026-03-24T19:54:52.110830Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-24T19:54:52.110992Z",
+        "finished_at": "2026-03-24T19:54:52.111122Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-24T19:54:52.111223Z",
+        "finished_at": "2026-03-24T19:57:09.238715Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-24T19:57:09.239006Z",
+        "finished_at": "2026-03-24T19:57:09.719794Z"
+    }
+}

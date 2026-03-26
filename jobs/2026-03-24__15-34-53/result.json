@@ -1,0 +1,29 @@
+{
+    "id": "e73d88fc-cd9c-462b-808c-75cfcdfd8a06",
+    "started_at": "2026-03-24T15:34:53.971202",
+    "finished_at": "2026-03-24T15:48:18.217947",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "vision-pat__google-gemini-3.1-pro-preview__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.4
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.4": [
+                            "view-recognition-custom-agent__ZjmruU2"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}
