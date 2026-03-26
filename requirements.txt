@@ -1,2 +1,10 @@
+# Benchmark runner
 litellm>=0.1.45
 python-dotenv>=1.0.0
+
+# Question generator (question-gen/)
+matplotlib>=3.7.0
+numpy>=1.24.3
+pillow>=10.0.1
+shapely>=2.0.0
+trimesh>=4.0.0

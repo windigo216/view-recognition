@@ -1,14 +1,17 @@
 # view-recognition
 
-A benchmark for evaluating the perceptual reasoning abilities of frontier model agents. Agents are presented with orthographic projection problems drawn from the Perceptual Ability Test (PAT) and must identify the correct third of a 3D solid given two out of its top, end, and front views.
+A Harbor task for evaluating the perceptual reasoning abilities of frontier model agents. Agents are presented with orthographic projection problems drawn from the Perceptual Ability Test (PAT) and must identify the correct third view of a 3D solid given two out of its top, end, and front views.
 
-Each question is rendered as a single composite image in standard PAT format. No code execution, terminal access, or internet access. The agent reasons from vision and perceptual ability alone.
+Each question is rendered as a single composite image in standard PAT format. No code execution, terminal access, or internet access is allowed. The agent reasons only from vision and perceptual ability.
 
 ---
 
 ## Overview
 
-Questions are drawn from a fixed set of 15 PAT problems located in `environment/official_questions/`.
+Two question sources are supported:
+
+- **Official questions** — a fixed set of 15 freely available PAT problems from Bohr Prep in `environment/official_questions/`
+- **Generated questions** — synthetic PAT problems produced by `question-gen/question_gen.py`, written to `question-gen/generated_questions/`
 
 Three frontier models are evaluated:
 
@@ -58,6 +61,10 @@ view-recognition/
 │   ├── Dockerfile
 │   ├── official_questions/    # Hand-authored PAT questions (not in Docker image)
 │   └── selected_questions/    # Prepared subset copied into Docker image
+├── question-gen/
+│   ├── question_gen.py         # Synthetic PAT question generator
+│   ├── make_composite.py      # PAT-format composite image renderer
+│   └── generated_questions/   # Output of question_gen.py (gitignored)
 ├── solution/
 │   ├── solve.sh               # Oracle solution script
 │   └── solutions.json         # Answer key synced from tests/ at prep time
@@ -65,6 +72,26 @@ view-recognition/
     ├── test.py                # Verifier: scores sol.txt against solutions.json
     └── solutions.json         # Ground-truth answers (not in Docker image)
 ```
+
+---
+
+## Generating Questions
+
+To generate a new set of synthetic PAT questions:
+
+```
+cd question-gen
+python question_gen.py
+```
+
+Output is written to `question-gen/generated_questions/`, with one subdirectory per question (`q01/`, `q02/`, ...) and a `solutions.json` answer key. Each question directory contains:
+
+- `composite.png` — PAT-format image shown to the agent
+- `full_question.png` — analysis composite with isometric view and marked answer
+- `input/top_view.png`, `input/end_view.png` — orthographic input views
+- `answers/A.png` … `answers/D.png` — front view answer choices
+
+The number of questions generated is controlled by `N_QUESTIONS` at the top of `question_gen.py` (default: 10).
 
 ---
 
@@ -139,7 +166,7 @@ where `n` is the total number of runs and `c` is the number of correct runs.
 
 ---
 
-## Agent Behaviour
+## Agent Behavior
 
 `VisionAgent` operates in a multi-turn loop with no access to a terminal or code execution environment. Each turn:
 
