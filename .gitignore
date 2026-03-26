@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Environment
+.env
+
+# Runtime output
+jobs/
+analytics/
+environment/selected_questions/
+
+# macOS
+.DS_Store

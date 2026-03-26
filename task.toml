@@ -1,0 +1,17 @@
+version = "1.0"
+
+[metadata]
+difficulty_explanation = "Agent must identify the correct orthographic front view from top and end views of a 3D solid"
+category = "spatial_reasoning"
+tags = ["pat", "orthographic", "3d", "reasoning"]
+
+[verifier]
+timeout_sec = 30.0
+
+[agent]
+timeout_sec = 2700.0
+
+[environment]
+cpus = 1
+memory_mb = 512
+allow_internet = false
