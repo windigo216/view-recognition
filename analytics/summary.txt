@@ -74,5 +74,5 @@ Model: opus  (10 runs)
 
 Description:
 Gemini and GPT look like they are guessing because they have inconsistent
-performance on all questions. Opus is actually reasoning because its performance
+performance on most questions. Opus is actually reasoning because its performance
 is consistent across all questioins (whether it is right or wrong). 
