@@ -8,5 +8,8 @@ venv/
 # Environment
 .env
 
+# Runtime logs
+jobs
+
 # macOS
 .DS_Store
